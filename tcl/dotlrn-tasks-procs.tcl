@@ -58,13 +58,6 @@ ad_proc -public dotlrn_tasks::add_applet {
     
     set package_id 0
     
-    if { ![dotlrn::is_package_mounted -package_key [package_key]] } {
-	set package_id [dotlrn::mount_package \
-			    -package_key [package_key] \
-			    -url [package_key] \
-			    -directory_p "t"]
-    }
-    
     dotlrn_applet::add_applet_to_dotlrn -applet_key [applet_key] -package_key [my_package_key]
     
 }
