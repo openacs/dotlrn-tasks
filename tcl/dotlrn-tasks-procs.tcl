@@ -104,12 +104,7 @@ ad_proc -public dotlrn_tasks::add_applet_to_community_helper {
 } {
     
     # Create and Mount the Tasks Package
-
-    set package_id [dotlrn::instantiate_and_mount \
-			-mount_point "tasks" \
-			$community_id \
-			[package_key] \
-		       ]
+    set package_id [apm_package_id_from_key tasks]
     
     # Set up the tasks portlet for this portal/community
     
