@@ -93,7 +93,7 @@ ad_proc -public dotlrn_tasks::add_applet_to_community_helper {
 } {
     Add the tasks applet to a specific dotlrn community
     
-    @params community_id
+    @param community_id
 } {
     
     # Create and Mount the Tasks Package
